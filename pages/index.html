@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Homework4</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+
+
+	<body>
+		<section>
+				<div class="boxhomework4">
+					<p>Insert : </p>
+					<form action="/api/creation" method="POST">
+						<p>Name</p>
+						<input type="text" autocomplete="off" name="name" required>
+						<p>Email</p>
+						<input type="text" autocomplete="off" name="email" required>
+						<p>premium_id</p>
+						<input type="text" autocomplete="off" name="premium_id" required><br>
+						<button type="submit" class="btn" id="valid1">Submit</button><br><br>
+					</form>
+					<p>Select : </p>
+					<form action="/api/retrieval" method="POST">
+						<p>Name</p>
+						<input type="text" autocomplete="off" name="name" required><br>
+						<button type="submit" class="btn" id="valid2">Submit</button><br><br>
+					</form>	
+					<p>Update : </p>
+					<form action="/api/updating" method="POST">
+						<p>Id</p>
+						<input type="text" autocomplete="off" name="id" required>
+						<p>Changes</p>
+						<input type="text" autocomplete="off" name="changes" required><br>
+						<button type="submit" class="btn" id="valid3">Submit</button><br><br>
+					</form>	
+					<p>Delete :</p>
+					<form action="/api/deleting" method="POST">
+						<p>Id</p>
+						<input type="text" autocomplete="off" name="id" required><br>
+						<button type="submit" class="btn" id="valid4">Submit</button><br><br>
+					</form>	
+				</div>
+		</section>
+	</body>
